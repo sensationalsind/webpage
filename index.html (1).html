@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensations Industries - BJJ & NoGi Gear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #e11d48;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-[Poppins]">
+
+    <!-- Navigation -->
+    <header class="flex justify-between items-center p-4 bg-white shadow-md">
+        <div class="flex items-center gap-4">
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Sensations Industries Logo" class="h-12">
+            <div class="text-2xl font-bold text-red-600">Sensations Industries</div>
+        </div>
+        <nav class="hidden md:flex gap-6 text-lg">
+            <a href="#home" class="hover:text-red-500">Home</a>
+            <a href="#categories" class="hover:text-red-500">Categories</a>
+            <a href="#contact" class="hover:text-red-500">Contact</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-3xl">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex flex-col bg-white shadow-md p-4 space-y-4">
+        <a href="#home" class="hover:text-red-500">Home</a>
+        <a href="#categories" class="hover:text-red-500">Categories</a>
+        <a href="#contact" class="hover:text-red-500">Contact</a>
+    </div>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="relative w-full h-[500px] overflow-hidden">
+        <div id="slider" class="absolute inset-0 flex transition-all duration-1000">
+            <div class="w-full flex-shrink-0 bg-cover bg-center text-white flex items-center justify-center flex-col" style="background-image: url('https://via.placeholder.com/1200x500?text=Premium+BJJ+Gis');">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Premium BJJ Gis</h1>
+                <p class="text-lg md:text-2xl">Crafted for Champions</p>
+                <a href="#categories" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">Explore Categories</a>
+            </div>
+            <div class="w-full flex-shrink-0 bg-cover bg-center text-white flex items-center justify-center flex-col" style="background-image: url('https://via.placeholder.com/1200x500?text=NoGi+Gear');">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">NoGi Fight Gear</h1>
+                <p class="text-lg md:text-2xl">Train Harder, Fight Smarter</p>
+                <a href="#categories" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">Shop Now</a>
+            </div>
+            <div class="w-full flex-shrink-0 bg-cover bg-center text-white flex items-center justify-center flex-col" style="background-image: url('https://via.placeholder.com/1200x500?text=Custom+Apparel');">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Custom Apparel</h1>
+                <p class="text-lg md:text-2xl">Designed for Your Team</p>
+                <a href="#categories" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">Customize Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section with Images -->
+    <section id="categories" class="p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Shop by Category</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+            <div class="bg-white rounded-lg shadow overflow-hidden text-center relative">
+                <span class="badge">Best Seller</span>
+                <img src="https://via.placeholder.com/400x300?text=BJJ+Gis" alt="BJJ Gis" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">BJJ Gis</h3>
+                    <p class="text-gray-600">Lightweight Gis, Competition Gis</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden text-center relative">
+                <span class="badge bg-green-600">20% OFF</span>
+                <img src="https://via.placeholder.com/400x300?text=NoGi+Gear" alt="NoGi Gear" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">NoGi Gear</h3>
+                    <p class="text-gray-600">Rash Guards, Fight Shorts</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden text-center relative">
+                <span class="badge bg-yellow-500">New Arrival</span>
+                <img src="https://via.placeholder.com/400x300?text=Custom+Apparel" alt="Custom Apparel" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Custom Apparel</h3>
+                    <p class="text-gray-600">Hoodies, Tracksuits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-8 bg-white">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-gray-600 mb-8">For custom orders, bulk inquiries, or partnerships, connect with us directly!</p>
+            <div class="flex flex-col gap-4">
+                <a href="mailto:info@sensationsind.com" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md font-bold">Email Us</a>
+                <a href="https://wa.me/YOURNUMBER" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-bold">Message on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        let slider = document.getElementById('slider');
+        let slides = slider.children.length;
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % slides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 4000);
+    </script>
+
+</body>
+</html>
